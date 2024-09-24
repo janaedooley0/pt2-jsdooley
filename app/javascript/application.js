@@ -5,6 +5,7 @@ import "controllers"
 import "@popperjs/core"
 import "bootstrap"
 import autosize from "autosize"
+import "scroll"
 
 document.addEventListener("turbo:load", () => {
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')

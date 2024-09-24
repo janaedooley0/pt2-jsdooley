@@ -1,0 +1,56 @@
+.rounded-lg {
+    width: 30vw;
+}
+
+.intro-section {
+    height: 85vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position:relative;
+  }
+  
+  .enigma-title {
+    width: 90vw;
+    font-size: 5rem; 
+    color: #d9d9d9;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 2;
+    letter-spacing: 0.1em;
+    animation: fadeIn 2.5s ease; 
+  }
+  
+  .intro-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .intro-text {
+    opacity: 0;
+    color: #d9d9d9;
+    text-align: center;
+    padding: 2rem;
+    max-width: 85%;
+    font-size: 1.2rem;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(50px); 
+  }
+  
+  .intro-text.active {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .more-section {
+    height: 35vh;
+  }

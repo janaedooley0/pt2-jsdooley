@@ -5,4 +5,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root to: redirect('pages/welcome')
+  get 'pages/welcome', to: 'pages#index', as: 'welcome'
+  get 'pages/me', to: 'pages#me', as: 'me'
 end
